@@ -24,7 +24,7 @@ const display = () => {
 };
 
 function meterToFeet(meter) {
-  return (meter * 3.2808398950131).toFixed(3);
+  return (meter / 0.3048).toFixed(3);
 }
 
 function feetToMeter(feet) {
@@ -36,7 +36,7 @@ function literToGallon(liter) {
 }
 
 function gallonToLiter(gallon) {
-  return (gallon * 3.785411784).toFixed(3);
+  return (gallon / 0.264172).toFixed(3);
 }
 
 function kiloToPound(kilo) {
