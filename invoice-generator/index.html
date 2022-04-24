@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/invoice-generator/style.css">
+    <title>Invoice Generator</title>
+</head>
+<body>
+    <section id="header">
+        <h1>Invoice creator</h1>
+        <p>Thanks for choosing Goodcorp, LLC!</p>
+    </section>
+    <section id="action">
+        <div id="options">
+            <button id="wash-btn">Car Wash: $10</button>
+            <button id="mow-btn">Mow Lawn: $20</button>
+            <button id="pull-btn">Pull Weeds: $30</button>
+        </div>
+        <div id="task" class="sub-header">
+            <h6>TASK</h6>
+            <h6>PRICE</h6>
+        </div>
+        <div>
+            <ul id="added-items">
+            </ul>
+        </div>
+        <hr>
+        <div id="total" class="sub-header">
+            <h6>NOTES</h6>
+            <h6>TOTAL AMOUNT</h6>
+        </div>
+        <div id="checkout" class="sub-header">
+            <p>We accept cash, credit card or PayPal</p>
+            <h2>$<span></span></h2>
+        </div>
+        <button id="send-btn">Send invoice</button>
+    </section>
+    <script src="/invoice-generator/index.js"></script>
+</body>
+</html>
