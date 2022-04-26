@@ -110,6 +110,17 @@ li {
     color: white;
 }
 
+.remove-btn {
+    background: none;
+    border: none;
+    color: #F0F9FF;
+    font-size: 1.2rem;
+    position: relative;
+    left: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 #checkout {
     padding-top: 1rem;
 }
