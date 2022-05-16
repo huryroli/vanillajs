@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "version": "1.4",
+  "name": "Currency converter",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting", "activeTab", "tabs"]
+}
