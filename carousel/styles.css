@@ -15,6 +15,7 @@ body {
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.7s;
 }
 
 .carousel .carousel-item img {
@@ -49,4 +50,22 @@ body {
 
 .carousel .carousel-actions button#carousel-button-next {
     margin-right: 20px;   
+}
+
+.carousel .indicators {
+    text-align: center;
+    color: gray;
+}
+
+.active-indicator {
+    color: black;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

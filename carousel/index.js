@@ -1,8 +1,10 @@
 const slides = document.getElementsByClassName("carousel-item");
+const indicators = document.getElementsByClassName("indicator-item");
 let slidePosition = 0;
 const totalSlides = slides.length;
 
 window.onload = setInterval(moveToNextSlide, 10000);
+Array.from(slides).forEach((el) => console.log(el));
 
 document
   .getElementById("carousel-button-next")
@@ -17,10 +19,8 @@ function moveToNextSlide() {
   } else {
     slidePosition++;
   }
-  Array.from(slides).forEach((el) =>
-    el.classList.remove("carousel-item-visible")
-  );
-  slides[slidePosition].classList.add("carousel-item-visible");
+  updateUi(slides, slidePosition, "carousel-item-visible");
+  updateUi(indicators, slidePosition, "active-indicator");
 }
 
 function moveToPrevSlide() {
@@ -29,8 +29,11 @@ function moveToPrevSlide() {
   } else {
     slidePosition--;
   }
-  Array.from(slides).forEach((el) =>
-    el.classList.remove("carousel-item-visible")
-  );
-  slides[slidePosition].classList.add("carousel-item-visible");
+  updateUi(slides, slidePosition, "carousel-item-visible");
+  updateUi(indicators, slidePosition, "active-indicator");
+}
+
+function updateUi(items, pos, itemClass) {
+  Array.from(items).forEach((el) => el.classList.remove(itemClass));
+  items[pos].classList.add(itemClass);
 }
