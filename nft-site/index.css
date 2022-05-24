@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #2b283a;
+}
+
+header, 
+section, 
+footer {
+    padding: 45px 0;
+}
+
+header, 
+.section-two {
+    background-color: #5f29a3;
+}
+
+h1, 
+h3 {
+    margin: 0;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3{
+    color: #d0aaff;
+    font-size: 20px;
+}
+
+.section-two{
+    color: whitesmoke;
+}
+
+.section-two-images {
+    width: 380px;
+    border-radius: 5px;
+}
+
+.section-two-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-two .container p {
+    line-height: 23px;
+}
+
+.sneakers {
+    width: 100%
+}
+
+a{
+    color: #ef5839;
+    text-decoration: underline dotted;
+}
+
+a:hover, 
+a:active{
+    color: #d4b44c;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+    color: #5f29a3;   
+    font-weight: bold; 
+}
+
+.btn {
+    padding: 10px 19px;
+    text-decoration: none;
+    border-radius: 4.6px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px 0;
+}
+
+.btn:hover,
+.btn:active {
+    color: #2b283a;
+    background-color: #f3e885;
+}
+
+.mid-btn {
+    background-color: #bb55b9;
+    color: #5f29a3;
+}
+
+.dark-btn {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.light-btn {
+    background-color: whitesmoke;
+    color: #5f29a3; 
+}
