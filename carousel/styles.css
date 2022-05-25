@@ -55,6 +55,7 @@ body {
 .carousel .indicators {
     text-align: center;
     color: gray;
+    cursor: pointer;
 }
 
 .active-indicator {

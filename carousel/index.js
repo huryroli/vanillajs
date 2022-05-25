@@ -6,6 +6,14 @@ const totalSlides = slides.length;
 window.onload = setInterval(moveToNextSlide, 10000);
 Array.from(slides).forEach((el) => console.log(el));
 
+window.onclick = (e) => {
+  if (e.target.classList.contains("indicator-item")) {
+    const indexClicked = e.target.getAttribute("data-item");
+    updateUi(slides, indexClicked, "carousel-item-visible");
+    updateUi(indicators, indexClicked, "active-indicator");
+  }
+};
+
 document
   .getElementById("carousel-button-next")
   .addEventListener("click", moveToNextSlide);
